@@ -36,9 +36,21 @@ describe('Turn', () => {
     expect(guess).to.equal('object')
   })
 
-  it('Should be a ble to return the card used on the turn', () => {
+  it('Should be able to return the card used on the turn', () => {
     let cardUsed = turn.returnCard()
 
     expect(cardUsed).to.deep.equal(card)
+  })
+
+  it('Should be able to see if the guess made is the correct answer', () => {
+    let guessMade = turn.evaluateGuess()
+
+    expect(guessMade).to.deep.equal(false)
+  })
+
+  it('Should be able to give the user feedback', () => {
+    let feedback = turn.giveFeedback()
+
+    expect(feedback).to.deep.equal('Incorrect!')
   })
 })
