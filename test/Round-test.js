@@ -4,7 +4,6 @@ const expect = chai.expect;
 const Round = require('../src/Round');
 const Deck = require('../src/Deck');
 const Card = require('../src/Card');
-const Turn = require('../src/Turn');
 
 describe('Round', () => {
 
@@ -16,9 +15,6 @@ describe('Round', () => {
     card3 = new Card(3, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
     deck = new Deck([card1, card2, card3]);
     round = new Round(deck);
-    // turn1 = new Turn('pug', card1)
-    // turn2 = new Turn('gallbladder', card2)
-    // turn3 = new Turn('Fitzgerald', card3)
 }) 
 
   it('Should be a function', () => {
