@@ -1,6 +1,6 @@
-# Flash Card!
+# Flash Cards!
 
-This is a game where you can answer 30 different flash card questions. The question topics all all code related and are very fun! The user will be presented with a question and multiple choice answer to select. At the end they will see the percentage of answers they got correct.
+This is a game where you can answer 30 different flash card questions. The topics of the questions are all code related and very fun! The user will be presented with a question and multiple choice answers to select. At the end they will see the percentage of answers they got correct.
 
 ![Alt Text](https://media.giphy.com/media/UTYWUrm4BHm4Xz44ry/giphy.gif)
 
