@@ -58,9 +58,9 @@ describe('Round', () => {
 
   it('should give feedback about the answer being correct or incorrct', function() {
     expect(round.incorrectGuesses).to.deep.equal([])
-    expect(round.takeTurn('pug')).to.equal('Incorrect!');
+    expect(round.takeTurn('pug')).to.equal('incorrect!');
     expect(round.incorrectGuesses).to.deep.equal([1]);
-    expect(round.takeTurn('gallbladder')).to.equal('Correct!');
+    expect(round.takeTurn('gallbladder')).to.equal('correct!');
     expect(round.incorrectGuesses).to.deep.equal([1]);
   })
 
