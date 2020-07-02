@@ -6,12 +6,11 @@ const Card = require('../src/Card')
 
 describe('Turn', () => {
 
-  let turn;
-  let card
+  let turn, card;
 
   beforeEach(() => {
     turn = new Turn('object', card);
-    card = new Card (2, "What is a comma-separated list of related values?", ["array", "object", "function"], "array")
+    card = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
   })
 
   it('should be a function', () => {
