@@ -6,13 +6,12 @@ const Card = require('../src/Card')
 
 describe('Turn', () => {
 
-  let card1, card2, card3;
-  let deck;
+  let card1, card2, card3, deck;
 
   beforeEach(() => {
-    card1 = new Card(2, "What is a comma-separated list of related values?", ["array", "object", "function"], "array")
-    card2 = new Card(4, "What type of prototype method does not modify the existing array but returns a particular representation of the array?", ["mutator method", "accessor method", "iteration method"], "accessor method");
-    card3 = new Card(5, "What type of prototype method loops through the existing array and applies a callback function that may mutate each element and return a new value?", ["mutator method", "accessor method", "iteration method"], "iteration method");
+    card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
+    card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
+    card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
     deck = new Deck([card1, card2, card3]);
   })
 
