@@ -16,5 +16,5 @@ This is a game where you can answer 30 different flash card questions. The topic
 
 note: to exit game at anytime press control + C
 
-Technologies used:
+Technologies used:  
 Trello Project Board: https://trello.com/b/k6aFfE1b/flashcards
