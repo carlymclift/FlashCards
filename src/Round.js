@@ -17,6 +17,7 @@ class Round {
     if (turn.evaluateGuess() === false) {
       this.incorrectGuesses.push(this.deck[this.turns].id)
     }
+
     this.turns++;
     return turn.giveFeedback()
   }
@@ -28,8 +29,9 @@ class Round {
   }
 
   endRound() {
-    let percent = this.calculatePercentCorrect()
-    return `** Round over! ** You answered ${percent}% of the questions correctly!`
+    let percent = `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+    console.log(percent)
+    return percent
   }
 }
 

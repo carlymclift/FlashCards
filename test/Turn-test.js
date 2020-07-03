@@ -50,6 +50,6 @@ describe('Turn', () => {
   it('Should be able to give the user feedback', () => {
     let feedback = turn.giveFeedback()
 
-    expect(feedback).to.deep.equal('Incorrect!')
+    expect(feedback).to.deep.equal('incorrect!')
   })
 })

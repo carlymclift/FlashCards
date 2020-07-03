@@ -34,12 +34,16 @@ async function main(round) {
   const currentRound = await getRound(round);
   const getAnswer = await inquirer.prompt(genList(currentRound));
   const getConfirm = await inquirer.prompt(confirmUpdate(getAnswer.answers, round));
-
-    if(!round.returnCurrentCard()) {
-      round.endRound();
+  
+    if(!round.returnCurrentCard() && round.calculatePercentCorrect() < 90) {
+      console.log('You needed a 90% or more to pass this test! Try again.')
+    } 
+    if(!round.returnCurrentCard()){
+      round.endRound()
     } else {
       main(round);
     }
+
 }
 
 module.exports.main = main;
