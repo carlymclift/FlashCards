@@ -53,6 +53,7 @@ describe('Round', () => {
   it('should evaluate guess and store it, if the guess is incorrect', function() {
     expect(round.incorrectGuesses).to.deep.equal([])
     round.takeTurn('pug')
+    expect(round.turns).to.equal(1)
     expect(round.incorrectGuesses).to.deep.equal([1])
   })
 
